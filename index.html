@@ -1,1 +1,103 @@
-coming soon
+<!DOCTYPE HTML>
+<head>
+	<title>PargonX</title>
+	<style>
+		body {
+			background: black;
+			margin:  none;
+		}
+		#intro {
+			text-align: center;
+			color:  #00FFFF;
+			background-color: #0B0B45;
+		}
+		.pfp {
+			border: 15px solid #FF0000;
+			border-radius: 50%;
+			height: 500px;
+		}
+		#platforms {
+			margin: 5%;
+			border: 1px solid white;
+			width: 90%;
+		}
+		.white {
+			color: white;
+		}
+		#stream-grid {
+		  display: grid;
+		  grid-template-columns: auto auto;
+		  grid-column-gap: 100px;
+		  grid-row-gap: 50px;
+		}
+		div.stream-grid-cell {
+		  background: black;
+		  border: 5px solid darkgreen;
+		  padding: 10px;
+		}
+		button.twitch-button {
+			border: 1px solid #6441A4;
+			background-color: #392E5C;
+			color:  white;
+			padding: 5px;
+			border-radius: 25%;
+		}
+		button.youtube-button {
+			border-raidus: 25%;
+			background-color: #E62117;
+			color: #FFFFFF;
+			padding:  5px;
+		}
+		#donations {
+			background-color: white;
+			height: 500px;
+			width:  100%;
+		}
+		td {
+			padding-left: 100px;
+			padding-right: 100px;
+			border: 1px solid black;
+		}
+		 @media screen and (max-width: 640px) {
+		  #stream-grid { grid-template-columns: 100%; }
+		}
+	</style>
+</head>
+<body>
+	<div id="intro">
+		<br><br>
+		<img src="images/pfp.jpg" class="pfp">
+		<h1>PargonX</h1>
+		<h3>Welcome to PargonX personal website. Find his platform IDs along with donate to upgrade stream setup etc.</h3>
+		<br><br>
+	</div>
+	<div id="platforms">
+		<center><h1 class="white">Streaming Platforms</h1></center>
+		<div id="stream-grid">
+			<div class="stream-grid-cell twitch-cell">
+				<center>
+					<h2 style="color: #6441A4">Twitch</h2>
+					<a href="https://twitch.tv/pargonx"><button class="twitch-button">Visit Profile</button></a>
+				</center>
+			</div>
+			<div class="stream-grid-cell">
+				<center>
+					<h2 style="color: #E62117;">Youtube</h2>
+					<a href="#"><button class="youtube-button">Visit Channel</button></a>
+				</center>
+			</div>
+			<h1></h1>
+		</div>
+	</div>
+	<div id="donations">
+		<h1 style="color: #00FFFF;text-align: center;">Donations</h1>
+		<center>
+			<table>
+				<th>
+					<td>Method</td>
+					<td>Url/Address</td>
+				</th>
+			</table>
+		</center>
+	</div>
+</body>
